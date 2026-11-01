@@ -1,16 +1,19 @@
+/* Quitamos los márgenes y espacios que el navegador añade por defecto. */
 * {
     margin: 0;
     padding: 0;
 }
-
+/*El encabezado ocupa todo el ancho disponible.
+No ponemos height porque queremos que el encabezado crezca según la altura que necesite la foto*/
 header {
     width: 100%;
-    height: 100px;
 }
 
 #imagen-header {
+    /* Queremos que la imagen ocupe toda la linea. */
     display: block;
-    max-width: 100%;
+    /* Ajustamos la imagen al ancho disponible */
+    width: 100%;
+    /*  El navegador calcula la altura que necesita la imagen. En auto conserva su forma y se ve entera.*/ 
     height: auto;
-    object-fit: cover;
 }
